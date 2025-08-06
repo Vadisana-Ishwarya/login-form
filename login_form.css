@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #3498db, #8e44ad);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #999;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -15px;
+    font-size: 15px;
+    color: #3498db;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.signup-text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.signup-text a {
+    color: #3498db;
+    text-decoration: none;
+}
+.signup-text a:hover {
+    text-decoration: underline;
+}
